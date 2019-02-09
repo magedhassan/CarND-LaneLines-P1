@@ -40,34 +40,34 @@ One test image looks as follows:
 #### The grayscale image
 First we convert the image to a grayscale one to avoid working on a color space that will make the process more complicated.
 
-![gray](/Images for README/gray.jpg)
+![gray](/Images_for_README/gray.jpg)
 
 #### The smoothed grayscale image
 Then we apply Gaussian smoothing to blur the contrast in the image to avoid having too many edges when we apply Canny algorithm.
 
-![smoothed gray](/Images for README/blur_gray.jpg)
+![smoothed gray](/Images_for_README/blur_gray.jpg)
 
 #### The edges image
 Then using Canny algorithm we detect the edges in the image.
 
-![smoothed gray](/Images for README/edges.jpg)
+![smoothed gray](/Images_for_README/edges.jpg)
 
 #### The masked_edges image
 We choose only the edges in our region of interest which is a polygon in the driver's view. This will isolate the edges related to the lane lines.
 
-![masked edges](/Images for README/masked_edges.jpg)
+![masked edges](/Images_for_README/masked_edges.jpg)
 
 #### The line_image image
 We can then identify lines using Hough Transform and highlight them using solid colored lines.  
 
-![line_image](/Images for README/line_image.jpg)
+![line_image](/Images_for_README/line_image.jpg)
 
 #### The final image
 We then add the line image to the original image to show the lane lines on the original image.
 
 Doing the previous steps on each video frame will result in a new video but with the lane lines marked in real time.
 
-![lines_edges](/Images for README/result.jpg)
+![lines_edges](/Images_for_README/result.jpg)
 
 2. Identification of any shortcomings
 ---
