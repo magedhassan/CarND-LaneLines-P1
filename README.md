@@ -24,7 +24,7 @@ This file will include the following sections:
 2. Identification of shortcomings
 
 3. Possible improvements
-
+---
 
 1. Description of the pipeline
 ---
@@ -69,6 +69,8 @@ Doing the previous steps on each video frame will result in a new video but with
 
 ![lines_edges](/Images_for_README/result.jpg)
 
+---
+
 2. Identification of any shortcomings
 ---
 This method needs a lot of manual adjustments of parameters which can result in the pipeline working well with some images on which the parameters have been adjusted, but on the other hand could not work so well with other images where the lane line characteristics are different in shape or color or continuity.   
@@ -80,6 +82,7 @@ Possible source of errors:
 
 - Lane lines with curvature will not be efficiently detected by this pipeline.
 
+---
 
 3. Possible improvements
 ---
